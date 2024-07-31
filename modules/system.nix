@@ -59,7 +59,7 @@
       #   https://github.com/yannbertrand/macos-defaults
       NSGlobalDomain = {
       #   # `defaults read NSGlobalDomain "xxx"`
-      "com.apple.keyboard.fnState" = true;
+      "com.apple.keyboard.fnState" = false;
       #   "com.apple.swipescrolldirection" = true;  # enable natural scrolling(default to true)
       #   "com.apple.sound.beep.feedback" = 0;  # disable beep sound when pressing volume up/down key
       #   AppleInterfaceStyle = "Dark";  # dark mode

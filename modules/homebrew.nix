@@ -8,7 +8,7 @@
     enable = true;
 
     onActivation = {
-      autoUpdate = false;
+      autoUpdate = true;
       # 'zap': uninstalls all formulae(and related files) not listed here.
       cleanup = "zap";
     };
@@ -18,6 +18,7 @@
     # otherwise Apple Store will refuse to install them.
     # For details, see https://github.com/mas-cli/mas 
     masApps = {
+      HiddenBar = 1452453066;
       NetWorkerLite = 1228738830;
       TimeOut = 402592703;
       WeatherBug = 1059074180;
@@ -44,11 +45,13 @@
       "alt-tab"
       "arc"
       "bitwarden"
+      "bluesnooze"
       "docker"
       "flux"
       "foxitreader"
       # "gitkraken"
       "hammerspoon"
+      # "hiddenbar"
       # "httpie"
       "jumpcut"
       "kap"
