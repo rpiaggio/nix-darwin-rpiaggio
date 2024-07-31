@@ -20,7 +20,7 @@
     masApps = {
       HiddenBar = 1452453066;
       NetWorkerLite = 1228738830;
-      TimeOut = 402592703;
+    #  TimeOut = 402592703;
       WeatherBug = 1059074180;
     };
 
@@ -38,6 +38,7 @@
     #   "aria2" # download tool
     #   "httpie" # http client
     ];
+
 
     # `brew install --cask`
     # TODO Feel free to add your favorite apps here.
@@ -60,7 +61,10 @@
       "monitorcontrol"
       # "obsidian"
       "scroll-reverser"
-      # "stretchly"
+      {
+        name = "stretchly";
+	args = { no_quarantine = true; };
+      }
 
       # # IM & audio & remote desktop & meeting
       # "telegram"
