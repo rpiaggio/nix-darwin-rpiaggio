@@ -18,6 +18,7 @@
     # otherwise Apple Store will refuse to install them.
     # For details, see https://github.com/mas-cli/mas 
     masApps = {
+      Bitwarden = 1352778147;
       HiddenBar = 1452453066;
       NetWorkerLite = 1228738830;
     #  TimeOut = 402592703;
@@ -45,7 +46,7 @@
     casks = [
       "alt-tab"
       "arc"
-      "bitwarden"
+      # "bitwarden"
       "bluesnooze"
       "docker"
       "flux"
