@@ -15,12 +15,13 @@
     lfs.enable = true;
 
     # TODO replace with your own name & email
-    userName = "Todd Burnside";
-    userEmail = "tburnside@gemini.edu";
+    userName = "Raúl Piaggio";
+    userEmail = "rpiaggio@gemini.edu";
 
     extraConfig = {
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
+      core.editor = "vim";
     };
 
 
