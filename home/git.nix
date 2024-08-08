@@ -21,7 +21,7 @@
     extraConfig = {
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
-      core.editor = "vim";
+      core.editor = "code --wait";
     };
 
 

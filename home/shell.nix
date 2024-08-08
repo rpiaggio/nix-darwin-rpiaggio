@@ -87,6 +87,9 @@
     # useful for working in the odb and other projects where autoformatting is not used by everyone.
     scalafmtAssumeUnchanged = "git update-index --assume-unchanged .scalafmt.conf";
     scalafmtNoAssumeUnchanged = "git update-index --no-assume-unchanged .scalafmt.conf";
+
+    # avoid duplicate instances in dock
+    code="open -b com.microsoft.VSCode";
   };
 
 }
