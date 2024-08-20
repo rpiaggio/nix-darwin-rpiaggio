@@ -24,6 +24,7 @@
     # procs
     # ripgrep
     # zoxide
+    zulu17
   ];
 
   programs = {
@@ -91,13 +92,15 @@
 
     vscode = {
       enable = true;
-      extensions = with pkgs.vscode-extensions; [
-        scalameta.metals
-        esbenp.prettier-vscode
-	stylelint.vscode-stylelint
-	eamodio.gitlens
-	github.copilot
-      ];
+   # RESTORE EXTENSIONS FROM SYNCED IN CLOUD
+   #   # mutableExtensionsDir = false;
+   #   extensions = with pkgs.vscode-extensions; [
+   #     scalameta.metals
+   #     esbenp.prettier-vscode
+   #     stylelint.vscode-stylelint
+   #     eamodio.gitlens
+   #     github.copilot
+   #   ];
     };
 
     zsh = {
