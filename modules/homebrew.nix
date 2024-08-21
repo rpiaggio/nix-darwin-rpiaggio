@@ -48,6 +48,7 @@
       "arc"
       # "bitwarden"
       "bluesnooze"
+      "dbeaver-community"
       "docker"
       "flux"
       "foxitreader"
