@@ -92,8 +92,8 @@
     code="open -b com.microsoft.VSCode";
 
     # git
-    grc = "git rebase --continue"
-    gra = "git rebase --abort"
+    grc = "git rebase --continue";
+    gra = "git rebase --abort";
   };
 
 }
