@@ -90,6 +90,10 @@
 
     # avoid duplicate instances in dock
     code="open -b com.microsoft.VSCode";
+
+    # git
+    grc = "git rebase --continue"
+    gra = "git rebase --abort"
   };
 
 }

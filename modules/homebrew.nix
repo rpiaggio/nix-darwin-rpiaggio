@@ -51,6 +51,7 @@
       "dbeaver-community"
       "docker"
       "flux"
+      "firefox"
       "foxitreader"
       # "gitkraken"
       "hammerspoon"
