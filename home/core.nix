@@ -50,7 +50,7 @@
       # if zsh integration is enabled, I get unwanted aliases which are difficult to override
       enableZshIntegration = false;
       git = false;
-      icons = false;
+      icons = null;
     };
 
     fzf = {

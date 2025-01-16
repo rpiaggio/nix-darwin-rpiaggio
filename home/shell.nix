@@ -49,6 +49,8 @@
       # Token for fontawesome - not managed in nix 
       # Need to do this a better way...
       [[ ! -f /Users/raul.piaggio/fontawesome.zsh ]] || source /Users/raul.piaggio/fontawesome.zsh
+      # Also tokens in environment
+      [[ ! -f /Users/raul.piaggio/devenv.zsh ]] || source /Users/raul.piaggio/devenv.zsh
     '';
     # plugins = [
     #   {

@@ -181,16 +181,12 @@
     packages = with pkgs; [
       # nerdfonts
       # https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/data/fonts/nerdfonts/shas.nix
-      (nerdfonts.override {
-        fonts = [
-          # symbols icon only
-          "NerdFontsSymbolsOnly"
-          # Characters
-          "FiraCode"
-          "JetBrainsMono"
-          "Iosevka"
-        ];
-      })
+      # symbols icon only
+      pkgs.nerd-fonts.symbols-only
+      # Characters
+      pkgs.nerd-fonts.fira-code
+      pkgs.nerd-fonts.jetbrains-mono
+      pkgs.nerd-fonts.iosevka
     ];
   };
 }
