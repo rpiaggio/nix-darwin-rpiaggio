@@ -22,7 +22,7 @@
       HiddenBar = 1452453066;
       NetWorkerLite = 1228738830;
     #  TimeOut = 402592703;
-      WeatherBug = 1059074180;
+    #  WeatherBug = 1059074180;
     };
 
     # taps = [
@@ -60,6 +60,7 @@
       "jumpcut"
       "kap"
       "karabiner-elements"
+      "meteorologist"
       # "mimestream"
       "monitorcontrol"
       # "obsidian"
