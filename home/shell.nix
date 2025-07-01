@@ -36,7 +36,7 @@
     # however this results in them being added to the path.
     # For a discussion of these alternatives for loading config into zshell, see
     # https://discourse.nixos.org/t/zsh-zplug-powerlevel10k-zshrc-is-readonly/30333
-    initExtra = ''
+    initContent = ''
       # eza aliases. Run 'lh' for help.
       # Note: if eza zsh integration is enabled, it overwrites some of the aliases.
       [[ ! -f ${./eza-aliases.zsh} ]] || source ${./eza-aliases.zsh}
