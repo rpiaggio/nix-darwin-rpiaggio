@@ -28,13 +28,25 @@
     hostname = "rpiaggio-ml2";
     allowUnfree = true;
     specialArgs = { inherit inputs username hostname allowUnfree; };
+    overlays = [
+      (final: prev: {
+        nodejs = prev.nodejs_20;
+      })
+    ];
   in
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#rpiaggio-ml2
     darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
       inherit system specialArgs;
-      modules = [ 
+      modules = [
+        ({ pkgs, ... }: {
+          nixpkgs = {
+            overlays = overlays;
+            config.allowUnfree = allowUnfree;
+          };
+        })
+
         ./modules/darwin.nix
         ./modules/system.nix
         ./modules/homebrew.nix
