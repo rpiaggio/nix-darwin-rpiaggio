@@ -28,11 +28,10 @@
     hostname = "rpiaggio-ml2";
     allowUnfree = true;
     specialArgs = { inherit inputs username hostname allowUnfree; };
-    overlays = [
-      (final: prev: {
-        nodejs = prev.nodejs_20;
-      })
-    ];
+    # No nodejs override: use nixpkgs' default `nodejs`, which the maintainers
+    # keep on the current default/LTS major (24.x as of this writing). It moves
+    # forward automatically on `nix flake update`, no version to specify here.
+    overlays = [ ];
   in
   {
     # Build darwin flake using:
